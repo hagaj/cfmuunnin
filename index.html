@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>°F - °C -muunnin</title>
-    </head>
-    <body>
-        <h1>°F - °C -Muunnin</h1>
-    </body>
-</html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>°F - °C -Muunnin
+
+    </title>
+    <style>
+        
+        .head1 {
+            font-size:40px;
+            color:#315a8a;
+            font-weight:bold;
+        }
+        .head2 {
+            font-size:17px;
+            margin-left:10px;
+            margin-bottom:15px;
+        }
+        body {
+            
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+        
+        }
+     
+        .menu {  
+            position: sticky;
+            top: 0;
+            background-color: #1a445c;
+            padding:10px 0px 10px 0px;
+            color:white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu-log {
+            right: auto;
+            float: right;
+        }
+        footer {
+            width: 100%;
+            bottom: 0px;
+            background-color: #315a8a;
+            color: #fff;
+            position: absolute;
+            padding-top:100px;
+            padding-bottom:50px;
+            text-align:center;
+            font-size:30px;
+            font-weight:bold;
+
+            background-repeat:round;
+            background-attachment:initial;
+            background-size: 100% 70%;
+        }
+        .body_sec {
+            margin-left:20px;
+            color: #315a8a;
+            font-size: 20px;
+        }
+    </style>
+</head>
+ 
+<body>
+     
+    <!-- Header Section -->
+    <header>
+        <div class="head1"></div>
+        <div class="head2"></div>
+    </header>
+     
+    <!-- Menu Navigation Bar -->
+    <div class="menu">
+        <p>Fahrenheit - Celsius -Muunnin</p>
+
+
+    </div>
+     
+    <!-- Body section -->
+    <div class = "body_sec">
+        <section id="Content">
+            <h3>Fahrenheit - Celsius -Muunnin</h3>
+
+                <form>
+    
+                    <label>°F</label> 
+                    <input type="number">
+                  
+                    <label>°C</label> 
+                    <input type="number">
+
+                    <button type="submit">Muunna</button><br>
+                </form>
+            <p>
+                    <span id="fahrenheit">?</span> °F = <span id="celsius">?</span> °C
+            </p>
+            <p>
+                    <span id="celsius">?</span> °C = <span id="fahrenheit">?</span> °F 
+            </p>
+
+
+        </section>
+        <p><br>
+        </p>
+    </div>
+     
+    <!-- Footer Section -->
+    <footer></footer>
+</body>
+</html> 
