@@ -2,5 +2,13 @@ function muunna() {
     alert('täällä ollaan');
 }
 
-const button = document.querySelector('button')
-button.addEventListener('click', muunna);
+const fahrenheitSyote = document.querySelector('input');
+const fahrenheitTuloste = document.querySelector('#fahrenheit');
+const celsiusTuloste = document.querySelector('#celsius');
+const muunnaButton = document.querySelector('button');
+
+function muunna() {
+    alert('täällä ollaan');
+}
+
+muunnaButton.addEventListener('click', muunna);
