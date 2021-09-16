@@ -1,0 +1,11 @@
+Fahrenheit - Celsius -muunnin
+
+Koodit GitHubiin
+Julkaisu GitHub Pages
+
+Vaiheet:
+
+1. Tili GitHubiin
+2. Repo ja kloonaus
+3. HTML-sivu
+4. Julkaise
