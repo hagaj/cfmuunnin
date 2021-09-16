@@ -4,10 +4,16 @@ const celsiusTuloste = document.querySelector('#celsius');
 const muunnaButton = document.querySelector('button');
 
 
-function temperatureConverter(valNum) {
-    valNum = parseFloat(valNum);
-    document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
-  }
+function fahrenheitCelsiukseksi(fahrenheit) {
+    let celsius = fahrenheit;
+    return celsius;
+}
 
+function muunna() {
+    let syote = fahrenheitSyote.value;
+    fahrenheitTuloste.textContent = syote;
+
+    celsiusTuloste.textContent = fahrenheitCelsiukseksi(syote);
+}
 
 muunnaButton.addEventListener('click', muunna);

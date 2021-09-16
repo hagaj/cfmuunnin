@@ -91,20 +91,22 @@
     <!-- Body section -->
     <div class = "body_sec">
         <section id="Content">
-            <h3>Fahrenheit - Celsius -Muunnin</h3>
+            <h3>Lämpötila muuntaja</h3>
 
                 <form>
-    
+                    <p>
                     <label>°F</label> 
-                    <input type="number">
-                  
+                    <input id="inputFahrenheit" type="number">
+                    oninput="lampotilaMuunnin(arvo)"
+                    onchange="lampotilaMuunnin(arvo)"
+
                     <label>°C</label> 
                     <input type="number">
 
                     <button type="button">Muunna</button><br>
                 </form>
-            <p>
-                    <span id="fahrenheit">?</span> °F = <span id="celsius">?</span> °C
+            
+                <span id="outputCelsius">?</span> °C 
             </p>
   
         </section>
