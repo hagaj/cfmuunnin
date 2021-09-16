@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>°F - °C -Muunnin</title>
-
+    <script src="index.js" defer></script>
     <style>
         
         .head1 {
@@ -13,8 +13,8 @@
             font-weight:bold;
         }
         .head2 {
-            font-size:17px;
-            margin-left:10px;
+            font-size:34px;
+            margin-left:0px;
             margin-bottom:15px;
         }
         body {
@@ -29,14 +29,15 @@
         .menu {  
             position: sticky;
             top: 0;
+            font-size: x-large;
             background-color: #1a445c;
-            padding:20px 0px 10px 0px;
+            padding:10px 10px 10px 25px;
             color:white;
             margin: 0 auto;
             overflow: hidden;
         }
         .menu a {
-            float: center;
+            float: left;
             color: white;
             text-align: center;
             padding: 19px 16px;
@@ -71,7 +72,7 @@
     </style>
 </head>
 
-<script type="text/javascript" src="index.js" defer></script>
+
 
 <body>
      
@@ -91,30 +92,26 @@
     <!-- Body section -->
     <div class = "body_sec">
         <section id="Content">
-            <h3>Lämpötila muuntaja</h3>
+            <h3>Lämpötila -Muunnin</h3>
 
-                <form>
-                    <p>
-                    <label>°F</label> 
-                    <input id="inputFahrenheit" type="number">
-                    oninput="lampotilaMuunnin(arvo)"
-                    onchange="lampotilaMuunnin(arvo)"
+            <form name="converter">
+                <p>Syötä arvo ja paina muunna, muunnin antaa arvon toisella mitta-asteikolla. </p>
+               
+                Celsius:<br> <input type="text" name="celsius" onChange="CelsiusConverter()"><br />
+                Fahrenheit:<br> <input type="text" name="fahrenheit" onChange="FahrenheitConverter()"><br />
+                Kelvin:<br> <input type="text" name="kelvin" onChange="KelvinConverter()"><br />
+               
+                <input type="button" value="Muunna" />
+               
+            </form>
+       
 
-                    <label>°C</label> 
-                    <input type="number">
-
-                    <button type="button">Muunna</button><br>
-                </form>
-            
-                <span id="outputCelsius">?</span> °C 
-            </p>
-  
         </section>
         <p><br>
         </p>
     </div>
      
     <!-- Footer Section -->
-    <footer></footer>
+    <footer>Blankkipage</footer>
 </body>
 </html> 
