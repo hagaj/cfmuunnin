@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Storage</title>
+    </head>
+    <body>
+        <h2></h2>
+        <button>Tyhjennä</button>
+        <script>
+            let tyhjenna = document.querySelector('button');
+            tyhjenna.addEventListener('click', function() {
+                window.sessionStorage.removeItem('annettu_nimi');
+            });
+
+            let h2 = document.querySelector('h2');
+            let joTiedossa = window.sessionStorage.getItem('annettu_nimi');
+            if (!joTiedossa) {
+                let nimi = prompt('Anna nimi?');
+                //console.log(nimi);
+                window.localStorage.setItem('annettu_nimi', nimi);
+                h2.textContent = nimi;
+            } else {
+                h2.textContent = joTiedossa;
+            }
+        </script>
+    </body>
+</html>
